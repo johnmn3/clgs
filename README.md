@@ -20,7 +20,7 @@ Build a single release artifact with the following script.
 
     ./scripts/release
 
-In this Apps Script project, go to the menu item 'File' and then "Make a Copy".
+In [this](https://script.google.com/d/1vUqjhUd21PD84gXqgOUy9tpx-kpvLRn2kZh-2y9DpwTrf-JTwh2F0xp1/edit?usp=drive_web&folder=0ALH6Pc2iSIKdUk9PVA&splash=yes) Apps Script project, go to the menu item 'File' and then "Make a Copy".
 
 Delete the contents of the cljs.js tab of the new App Script project.
 
