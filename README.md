@@ -6,7 +6,7 @@ Run Clojurescript on [Google Apps Script](https://developers.google.com/apps-scr
 
 Apparently, the Google Apps Script servers are similar to Node.js. 
 
-Currently, expressions like `(take 4 (range 10))` work correctly. However, def'ing functions does not yet work. Any advice would be appreciated. 
+Currently, expressions like `(take 4 (range 10))` work correctly. However, `def`'ing functions does not yet work. Any advice would be appreciated. 
 
 ## Setup
 
