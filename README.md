@@ -1,56 +1,41 @@
 # clgs
 
-FIXME: Write a one-line description of your library/project.
+Run Clojurescript on [Google Apps Script](https://developers.google.com/apps-script/).
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+Apparently, the Google Apps Script servers are similar to Node.js. 
+
+Currently, expressions like `(take 4 (range 10))` work correctly. However, def'ing functions does not yet work. Any advice would be appreciated. 
+
+A current experimental Apps Script project can be found [here] (https://script.google.com/d/1vUqjhUd21PD84gXqgOUy9tpx-kpvLRn2kZh-2y9DpwTrf-JTwh2F0xp1/edit?usp=drive_web&folder=0ALH6Pc2iSIKdUk9PVA&splash=yes). 
 
 ## Setup
 
-Most of the following scripts require [rlwrap](http://utopia.knoware.nl/~hlub/uck/rlwrap/) (on OS X installable via brew).
-
-Build your project once in dev mode with the following script and then open `index.html` in your browser.
-
-    ./scripts/build
-
-To auto build your project in dev mode:
-
-    ./scripts/watch
-
-To start an auto-building Node REPL:
-
-    ./scripts/repl
-
-To get source map support in the Node REPL:
-
-    lein npm install
-    
-To start a browser REPL:
-    
-1. Uncomment the following lines in src/clgs/core.cljs:
-```clojure
-;; (defonce conn
-;;   (repl/connect "http://localhost:9000/repl"))
-```
-2. Run `./scripts/brepl`
-3. Browse to `http://localhost:9000` (you should see `Hello world!` in the web console)
-4. (back to step 3) you should now see the REPL prompt: `cljs.user=>`
-5. You may now evaluate ClojureScript statements in the browser context.
-    
-For more info using the browser as a REPL environment, see
-[this](https://github.com/clojure/clojurescript/wiki/The-REPL-and-Evaluation-Environments#browser-as-evaluation-environment).
-    
 Clean project specific out:
 
     lein clean
      
-Build a single release artifact with the following script and then open `index_release.html` in your browser.
+Build a single release artifact with the following script.
 
     ./scripts/release
 
+In this Apps Script project, go to the menu item 'File' and then "Make a Copy".
+
+Delete the contents of the cljs.js tab of the new App Script project.
+
+Then copy the contents of ./release/clgs.js to the cljs.js tab.
+
+Go to the menu item "Run" and run your functions.
+
+You can view the logs by clicking the menu item "View" and then "Logs".
+
+As you can see, some things work and some things don't.
+
+Let me know if you figure out how to fix any of the functionality!
+
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 John Newman
 
 Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
