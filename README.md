@@ -8,8 +8,6 @@ Apparently, the Google Apps Script servers are similar to Node.js.
 
 Currently, expressions like `(take 4 (range 10))` work correctly. However, def'ing functions does not yet work. Any advice would be appreciated. 
 
-A current experimental Apps Script project can be found [here] (https://script.google.com/d/1vUqjhUd21PD84gXqgOUy9tpx-kpvLRn2kZh-2y9DpwTrf-JTwh2F0xp1/edit?usp=drive_web&folder=0ALH6Pc2iSIKdUk9PVA&splash=yes). 
-
 ## Setup
 
 Clean project specific out:
