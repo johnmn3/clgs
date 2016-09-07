@@ -22,7 +22,7 @@ In [this](https://script.google.com/d/1vUqjhUd21PD84gXqgOUy9tpx-kpvLRn2kZh-2y9Dp
 
 Delete the contents of the cljs.js tab of the new App Script project.
 
-Then copy the contents of ./release/clgs.js to the cljs.js tab.
+Then copy the contents of ./release/clgs.js to the cljs.gs tab.
 
 Go to the menu item "Run" and run your functions.
 
